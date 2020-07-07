@@ -1,0 +1,19 @@
+\item \subquestionpoints{5}
+Suppose we use the sigmoid function as the activation function for $h_1, h_2, h_3$ and $o$.
+What is the gradient descent update to $w_{1, 2}^{[1]}$, assuming we use a learning rate of $\alpha$?
+Your answer should be written in terms of $\xsi$, $o^{(i)}$, $\ysi$, and the weights.\\
+
+{\bf BEGIN PROOF HERE}\\
+
+Let $g$ denote the sigmoid function $g(x) = \frac{1}{1 + e^{-x}}$, and $h^{(i)}_j$ denote the output of hidden neuron $h_j$ for sample $i$. For shorthand, we denote $\vec{w_j}^T\xsi = w_{1, j}^{[1]}x_1^{(i)} + w_{2, j}^{[1]}x_2^{(i)} + w_{0, j}^{[1]}$ for $j \in \{1, 2, 3\}$, and $\vec{w_o}^Th^{(i)} = w_{1}^{[2]}h^{(i)}_1 + w_{2}^{[2]}h^{(i)}_2 + w_{3}^{[2]}h^{(i)}_3 + w_{0}^{[2]}$. Using chain rule, we have
+\begin{flalign*}
+    \frac{\partial l}{\partial w_{1, 2}^{[1]}} &= & & & & & & & &\\[50pt]
+    \frac{\partial (o^{(i)})}{\partial w_{1, 2}^{[1]}} &= & & & & & & & &\\[50pt]
+    \frac{\partial (h^{(i)}_2)}{\partial w_{1, 2}^{[1]}} &= & & & & & & & &\\[50pt]
+\end{flalign*}
+Combining everything, we have
+\begin{flalign*}
+    \frac{\partial l}{\partial w_{1, 2}^{[1]}} = & & & & & & & &\\[50pt]
+\end{flalign*}
+and the update rule is \\[50pt]
+{\bf END PROOF}\\

@@ -3,6 +3,34 @@
 
 \usepackage{graphicx}
 
+\usepackage[utf8]{inputenc}
+\usepackage{listings}
+\usepackage{xcolor}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+
 \newcommand{\di}{{d}}
 \newcommand{\nexp}{{n}}
 \newcommand{\nf}{{p}}
@@ -78,7 +106,9 @@ emphstyle={\color{self}\slshape},
 \newcommand{\ruleskip}{\bigskip\hrule\bigskip}
 \newcommand{\nodify}[1]{{\sc #1}}
 \newcommand{\points}[1]{{\textbf{[#1 points]}}}
-\newcommand{\subquestionpoints}[1]{{[#1 points]}}
+\newcommand{\subquestionpointswritten}[1]{{\textbf{[#1 point(s) Written]}}}
+\newcommand{\subquestionpointscoding}[1]{{\textbf{[#1 point(s) Coding]}}}
+\newcommand{\subquestionpointscodingandwritten}[1]{{\textbf{[#1 point(s) Written \& Coding]}}}
 \newenvironment{answer}{{\bf Answer:} \sf \begingroup\color{red}}{\endgroup}%
 
 \newcommand{\bitem}{\begin{list}{$\bullet$}%

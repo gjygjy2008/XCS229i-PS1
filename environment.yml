@@ -8,4 +8,4 @@ dependencies:
   - python=3.6.6
   - scipy
   - pillow
-  - zip=3.0
+  - notebook
